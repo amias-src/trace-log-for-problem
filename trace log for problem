@@ -1,0 +1,31 @@
+end_group":0,"priority":0,"notes":""}]}}
+2022-11-07 20:00:56.3|Debug|SabnzbdProxy|Url: http://localhost:8080/api?mode=version&apikey=(removed)&output=json
+2022-11-07 20:00:56.3|Trace|HttpClient|Req: [GET] http://localhost:8080/api?mode=version&apikey=(removed)&output=json
+2022-11-07 20:00:56.3|Trace|ConfigService|Using default config value for 'proxyenabled' defaultValue:'False'
+2022-11-07 20:00:56.3|Trace|HttpClient|Res: [GET] http://localhost:8080/api?mode=version&apikey=(removed)&output=json: 200.OK (19 bytes) (4 ms)
+2022-11-07 20:00:56.3|Trace|HttpClient|Response content (19 bytes): {"version":"3.7.0"}
+2022-11-07 20:00:56.3|Debug|SabnzbdProxy|Url: http://localhost:8080/api?mode=fullstatus&skip_dashboard=1&apikey=(removed)&output=json
+2022-11-07 20:00:56.3|Trace|HttpClient|Req: [GET] http://localhost:8080/api?mode=fullstatus&skip_dashboard=1&apikey=(removed)&output=json
+2022-11-07 20:00:56.3|Trace|ConfigService|Using default config value for 'proxyenabled' defaultValue:'False'
+2022-11-07 20:00:56.3|Trace|HttpClient|Res: [GET] http://localhost:8080/api?mode=fullstatus&skip_dashboard=1&apikey=(removed)&output=json: 200.OK (1526 bytes) (6 ms)
+2022-11-07 20:00:56.3|Trace|HttpClient|Response content (1526 bytes): {"status":{"uptime":"1d","color_scheme":"Auto","helpuri":"https://sabnzbd.org/wiki/","pid":9072,"active_lang":"en","rtl":false,"my_lcldata":"C:\\Users\\engeb\\AppData\\Local\\sabnzbd","my_home":"C:\\Users\\engeb","webdir":"C:\\Program Files\\SABnzbd\\interfaces\\Glitter\\templates","url_base":"/sabnzbd","windows":true,"macos":false,"power_options":true,"pp_pause_event":false,"apikey":"(removed)","new_release":null,"new_rel_url":null,"version":"3.7.0","paused":false,"pause_int":"0","paused_all":false,"diskspace1":"158.27","diskspace2":"158.27","diskspace1_norm":"158.3 G","diskspace2_norm":"158.3 G","diskspacetotal1":"475.36","diskspacetotal2":"475.36","speedlimit":"0","speedlimit_abs":"0","have_warnings":"0","finishaction":null,"quota":"0 ","have_quota":false,"left_quota":"0 ","cache_art":"0","cache_size":"0 B","logfile":"C:\\Users\\engeb\\AppData\\Local\\sabnzbd\\logs\\sabnzbd.log","weblogfile":null,"loglevel":"1","folders":[],"configfn":"C:\\Users\\engeb\\AppData\\Local\\sabnzbd\\sabnzbd.ini","warnings":[],"delayed_decoder":0,"delayed_assembler":0,"loadavg":"","pystone":0,"downloaddir":"C:\\Users\\engeb\\Downloads\\incomplete","downloaddirspeed":0,"completedir":"C:\\Users\\engeb\\Downloads\\complete","completedirspeed":0,"internetbandwidth":0,"servers":[{"servername":"news.newhosting.com","serveractiveconn":0,"servertotalconn":8,"serverconnections":[],"serverssl":0,"serversslinfo":"","serveractive":true,"servererror":"","serverpriority":0,"serveroptional":0,"serverbps":"0 "}]}}
+2022-11-07 20:00:56.3|Error|Sabnzbd|Test aborted due to exception
+
+[v3.0.9.1549] System.NullReferenceException: Object reference not set to an instance of an object.
+   at NzbDrone.Core.Download.Clients.Sabnzbd.Sabnzbd.<GetCategories>d__10.MoveNext() in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Download\Clients\Sabnzbd\Sabnzbd.cs:line 233
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at NzbDrone.Core.Download.Clients.Sabnzbd.Sabnzbd.TestCategory() in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Download\Clients\Sabnzbd\Sabnzbd.cs:line 434
+   at NzbDrone.Core.Download.Clients.Sabnzbd.Sabnzbd.Test(List`1 failures) in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Download\Clients\Sabnzbd\Sabnzbd.cs:line 273
+   at NzbDrone.Core.Download.DownloadClientBase`1.Test() in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Download\DownloadClientBase.cs:line 113
+
+2022-11-07 20:00:56.4|Trace|SonarrErrorPipeline|Handling Exception
+2022-11-07 20:00:56.4|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Test was aborted due to an error: Object reference not set to an instance of an object.
+2022-11-07 20:00:56.4|Trace|Http|Res: 1155 [POST] /api/v3/downloadclient: 400.BadRequest (2187 ms)
+2022-11-07 20:00:56.4|Debug|Api|[POST] /api/v3/downloadclient: 400.BadRequest (2187 ms)
+2022-11-07 20:01:00.9|Trace|ConfigService|Using default config value for 'minimumage' defaultValue:'0'
+2022-11-07 20:01:00.9|Trace|ConfigService|Using default config value for 'minimumage' defaultValue:'0'
+2022-11-07 20:01:00.9|Trace|ConfigService|Using default config value for 'minimumage' defaultValue:'0'
+2022-11-07 20:01:00.9|Trace|ConfigService|Using default config value for 'minimumage' defaultValue:'0'
+2022-11-07 20:01:00.9|Trace|ConfigService|Using default config value for 'minimumage' defaultValue:'0'
+2022-11-07 20:01:00.9|Trace|ConfigService|Using default config value for 'minimumage' defaultValue:'0'
